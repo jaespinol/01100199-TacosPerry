@@ -1,0 +1,23 @@
+{
+  "name": "tacosperry",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto html",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaespinol/01100199-TacosPerry.git"
+  },
+  "author": "Jose Antonio Espino Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaespinol/01100199-TacosPerry/issues"
+  },
+  "homepage": "https://github.com/jaespinol/01100199-TacosPerry#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
