@@ -27,7 +27,7 @@
         </div>
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron-seccion jumbotron-contacto">
         <div class="container">
             <h1>Taqueria, Tacos Perry!</h1>
         </div>
@@ -40,10 +40,52 @@
                 <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
         </nav>
-        <div class="row">
-             
-        </div>
-       
+        <!---FORMULARIO--->
+        <h4>Dejanos un mensaje</h4>
+        <h5>Completa los siguientes datos</h5>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" class="form-control">
+                        <option selected>Capital Federal</option>
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Cordoba</option>
+                        <option value="3">Santa Fe</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea class="form-control" id="comentario" rows="5"> </textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary ">Enviar</button>
+            </div>
+        </form>
     </div>
     <footer>
         <div class="row">
