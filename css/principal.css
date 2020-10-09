@@ -1,6 +1,12 @@
 .btn-ver{
     width: 100%;
 }
+
+.banner{
+   /* padding-top: 56px;*/
+    margin-block-end: 20px;
+}
+
 .jumbotron{
     background-color: rgb(189, 50, 7);
     /*color: #ffffff;*/
