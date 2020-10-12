@@ -1,0 +1,73 @@
+.bg-naranja {
+  background-color: #BD3207;
+  /* color:rgb(255, 255, 255); */
+}
+.jumbotron {
+  background-image: url(../img/B03.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: top center;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+  text-shadow: 1px 2px #a0a0a0;
+}
+.jumbotron-seccion {
+  background-image: url(../img/B02.jpg);
+  height: 30vh;
+  background-size: cover;
+  background-position: top center;
+  margin-block-end: 20px;
+  color: #000000;
+  padding-top: 130px;
+  text-shadow: 2px 3px #ffffff;
+  text-align: center;
+}
+footer {
+  padding: 10px 10px 0 10px;
+  background-color: #BD3207;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+footer a {
+  color: #ffffff;
+}
+.card-design {
+  flex: 1 250px;
+  padding: 2px 0px 2px 0px;
+  margin-top: 10px;
+}
+.btn-ver {
+  width: 100%;
+  border-radius: 0px;
+}
+.footer-address-icon {
+  padding-right: 10px;
+}
+.banner {
+  padding-top: 56px;
+  margin-block-end: 20px;
+}
+.carousel-caption {
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0px;
+  bottom: 0px;
+  margin-block-end: 20px;
+  text-shadow: 2px 3px #ffffff;
+}
+@media (min-width: 768px) {
+  .banner {
+    padding-top: 56px;
+    margin-block-end: 20px;
+  }
+  .carousel-caption {
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-block-end: 20px;
+    text-shadow: 2px 3px #ffffff;
+  }
+}

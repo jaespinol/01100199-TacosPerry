@@ -1,125 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tacos Perry !!</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/principal.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>Taqueria, Tacos Perry!</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand" href="./index.html">Tacos Perry!</a>
+    <nav class="navbar  navbar-expand-md navbar-dark bg-naranja fixed-top">
+        <a class="navbar-brand" href="./index.html"><img src="img/icon-taco-256.png" width="32" height="32"  alt="logo"/> Tacos Perry!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio <span
+                <li class="nav-item "> <a class="nav-link" href="./index.html">Inicio <span
                             class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Galeria.html">Galeria</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item active"> <a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./galeria.html">Galeria</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron-seccion">
-        <div class="container">
-            <h1>Taqueria, Tacos Perry!</h1>
-        </div>
+        <h1><img src="img/icon-taco-256.png" width="64" height="64"  alt="logo"/> Taqueria, Tacos Perry!</h1>
     </div>
-
+    <!-- container -->
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="./index.html"> <span class="oi oi-home"></span>&nbsp; Inicio</a>
+                </li>
                 <li class="breadcrumb-item active" aria-current="page">Menu</li>
             </ol>
         </nav>
-        <div class="row">
-            <table class="table table-hover">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Tacos</th>
-                        <th scope="col">Quesadillas</th>
-                        <th scope="col">Panchos</th>
-                        <th scope="col">Sodas</th>
-                        <th scope="col">Platillos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="oi oi-star"></span></td>
-                        <td>$100</td>
-                        <td>$200</td>
-                        <td>$300</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span> <span class="oi oi-star"></span></td>
-                        <td>$50</td>
-                        <td>$100</td>
-                        <td>$200</td>
-                        <td>$300</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span> <span class="oi oi-star"></span> <span
-                                class="oi oi-star"></span></td>
-                        <td>$72</td>
-                        <td>$100</td>
-                        <td>$250</td>
-                        <td>$350</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span> <span class="oi oi-star"></span> <span
-                                class="oi oi-star"></span> <span class="oi oi-star"></span></td>
-                        <td>$100</td>
-                        <td>$200</td>
-                        <td>$300</td>
-                        <td>$400</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span> <span class="oi oi-star"> </span> <span
-                                class="oi oi-star"></span> <span class="oi oi-star"></span> <span
-                                class="oi oi-star"></span></td>
-                        <td>$82</td>
-                        <td>$100</td>
-                        <td>$350</td>
-                        <td>$400</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
 
-    </div>
+        <h4> MENU:</h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <h5>Tacos </h5>
+                <p>...</p>
+            </div>
+            <div class="col-sm-4">
+                <h5>Quesadillas</h5>
+                <p>...</p>
+            </div>
+            <div class="col-sm-4">
+                <h5>Panchos</h5>
+                <p>...</p>
+            </div>
+        </div>
+        <hr>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="compra-tab" data-toggle="tab" href="#compra" role="tab"
+                    aria-controls="compra" aria-selected="true">Compra</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab"
+                    aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab"
+                    aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compra" role="tabpanel" aria-labelledby="compra-tab">
+                <h4><i class="fa fa-bank" aria-hidden="true"></i>Compras</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Tacos</th>
+                                <th scope="col">Quesadillas</th>
+                                <th scope="col">Panchos</th>
+                                <th scope="col">Sodas</th>
+                                <th scope="col">Platillos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-star"></span></td>
+                                <td>$100</td>
+                                <td>$200</td>
+                                <td>$300</td>
+                                <td>$400</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span> <span class="oi oi-star"></span></td>
+                                <td>$50</td>
+                                <td>$100</td>
+                                <td>$200</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span> <span class="oi oi-star"></span> <span
+                                        class="oi oi-star"></span></td>
+                                <td>$72</td>
+                                <td>$100</td>
+                                <td>$250</td>
+                                <td>$350</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span> <span class="oi oi-star"></span> <span
+                                        class="oi oi-star"></span> <span class="oi oi-star"></span></td>
+                                <td>$100</td>
+                                <td>$200</td>
+                                <td>$300</td>
+                                <td>$400</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span> <span class="oi oi-star"> </span> <span
+                                        class="oi oi-star"></span> <span class="oi oi-star"></span> <span
+                                        class="oi oi-star"></span></td>
+                                <td>$82</td>
+                                <td>$100</td>
+                                <td>$350</td>
+                                <td>$400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade  active" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <h4><i class="fa fa-credit-card" aria-hidden="true"></i> Tarjetas</h4>
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i> Tarjeta Básica
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseBasica" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseVIP" aria-expanded="false"
+                                    aria-controls="collapseVIP">
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i> Tarjeta VIP
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false"
+                                    aria-controls="collapseBlack">
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i> Tarjeta Black
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseBlack" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade  active" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <h4><i class="fa fa-comment " aria-hidden="true"></i> Comentarios</h4>
+            </div>
+        </div>
+    </div> <!-- /container -->
     <footer>
         <div class="row">
-            <div class="col-sm-4 " style="font-size:larger;">
-                <a href="http://www.facebook.com">Facebook</a>
-                <a href="http://www.instagram.com">Instagram</a>
-                <a href="http://www.twtter.com">Twtter</a>
+            <div class="col-sm-4 d-flex flex-column" style="font-size:larger;">
+                <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i>
+                    Facebook</a>
+                <a href="http://www.instagram.com" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram</a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    Twtter</a>
             </div>
             <div class="col-sm-4">
                 <address>
                     <h5>Nuestra Ubicación</h5>
-                    <div>Calle Bilbao esquina con Bogota</div>
-                    <div>Col. Los Fresnos</div>
-                    <div>Nuevo Laredo, Tamaulipas, Mexico</div>
+                    <div><span class="oi oi-map-marker footer-address-icon"></span> Calle Bilbao esquina con Bogota
+                    </div>
+                    <div><span class="oi oi-map footer-address-icon"></span> Nuevo Laredo, Tamaulipas, Mexico</div>
+                    <div><span class="oi oi-phone footer-address-icon"></span> (867) 710-9090</div>
                 </address>
             </div>
-            <div class="col-sm-4   align-items-end" style="font-size:larger;">
-                <a href="#">Contactanos</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Menu</a>
-                <a href="#">Galeria</a>
+            <div class="col-sm-4 d-flex flex-column align-items-end" style="font-size:larger;">
+                <a href="./about.html">Nosotros</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./galeria.html">Galeria</a>
+                <a href="./contacto.html">Contacto</a>
             </div>
         </div>
+
     </footer>
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

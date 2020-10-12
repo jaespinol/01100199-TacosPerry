@@ -1,30 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tacos Perry !!</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/principal.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>Taqueria, Tacos Perry!</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand" href="./index.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Tacos Perry!</a>
+    <nav class="navbar  navbar-expand-md navbar-dark bg-naranja fixed-top">
+        <a class="navbar-brand" href="#"> <img src="img/icon-taco-256.png" width="32" height="32" alt="logo" /> Tacos
+            Perry!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio <span
+                <li class="nav-item active"> <a class="nav-link" href="#">Inicio <span
                             class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./Galeria.html">Galeria</a> </li>
-                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./menu.html">Menu</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./galeria.html">Galeria</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -34,7 +40,6 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -58,13 +63,6 @@
                         </h1>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/B04.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption">
-                        <h1> <img src="img/icon-taco-256.png" width="64" height="64" alt="logo" />Tacos Perry! - TACOS
-                        </h1>
-                    </div>
-                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -76,120 +74,224 @@
             </a>
         </div>
     </section>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <!-- <div class="jumbotron">
-        <div class="container">
-            <h1> <i class="fa fa-cutlery" aria-hidden="true"></i> Taqueria, Tacos Perry!</h1>
-        </div>
+        <h1><i class="fa fa-cutlery" aria-hidden="true"></i> Taqueria, Tacos Perry!</h1>
     </div> -->
-
+    <!-- container -->
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                <li class="breadcrumb-item active" aria-current="page"><span class="oi oi-home"></span>&nbsp; Inicio
+                </li>
             </ol>
         </nav>
         <div class="row">
             <div class="col-sm-4">
-                <h3>Tacos Perry</h3>
-                <p>Taqueria de Venta de todo tipo de comida</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tacos"
+                    aria-expanded="false" aria-controls="multicollapse1"><img src="img/icon-taco-256.png" width="16"
+                        height="16" alt="logo" /> Tacos Perry</button>
             </div>
             <div class="col-sm-4">
-                <h3>Ubicación</h3>
-                <p>Calle Bilbao esquina con Bogota - Servicio a Domicilio </p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ubicacion"
+                    aria-expanded="false" aria-controls="multicollapse2">Ubicación</button>
             </div>
             <div class="col-sm-4">
-                <h3>Videos</h3>
-                <p>Disfruta nuestro canal</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#videos"
+                    aria-expanded="false" aria-controls="multicollapse3">Videos</button>
             </div>
         </div>
-        <div class="d-flex flex-wrap ">
-            <div class="d-flex flex-column card-design justify-content-between">
-                <img class="card-img-top" src="img/tacos.jpg" alt="ImagenTacos" />
-                <div class="card-body">
-                    <h4 class="card-tile">Tacos</h4>
-                    <p class="card-text">Tacos de carne asada y mixtos en tortilla de harina y maiz</p>
-                </div>
-                <div><button class="btn btn-primary btn-ver">Ver detalles</button></div>
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="tacos">
+                <p>
+                <h3><img src="img/icon-taco-256.png" width="32" height="32" alt="logo" />Tacos Perry</h3>
+                <p>Taqueria de Venta de todo tipo de comida</p>
+                </p>
             </div>
-            <div class="d-flex flex-column card-design justify-content-between">
-                <img class="card-img-top" src="img/quesadilla.jpg" alt="ImagenTacos" />
+            <div class="col-sm-4 collapse multi-collapse" id="ubicacion">
+                <p>
+                <h3>Ubicación</h3>
+                <p>Calle Bilbao esquina con Bogota - Servicio a Domicilio </p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="videos">
+                <p>
+                <h3>Videos</h3>
+                <p>Disfruta nuestro canal</p>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-wrap flex-row-reverse">
+            <div class="card card-design d-flex flex-column justify-content-between ml-3">
+                <img class="card-img-top" src="img/tacos.jpg" alt="Card image">
                 <div class="card-body">
-                    <h4 class="card-tile">Quesadillas</h4>
+                    <h5 class="card-title">Tacos</h5>
+                    <h6 class="card-subtitle text-muted">Harina o Maiz</h6>
+                    <p class="card-text">Tacos de carne asada y mixtos en tortilla de harina o maiz</p>
+                </div>
+                <div><button class="btn btn-primary btn-ver" data-target="#modal_contacto" data-toggle="modal"
+                        data-toggle2="tooltip" data-placement="top"
+                        title="Da clic Aqui para Pedidos!!!">Pedidos!</button></div>
+            </div>
+            <div class="card card-design d-flex flex-column justify-content-between ml-3">
+                <img class="card-img-top" src="img/quesadilla.jpg" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Quesadillas</h5>
+                    <h6 class="card-subtitle text-muted">Maiz</h6>
                     <p class="card-text">Quesadillas de carne asada y mixtas en tortilla de maiz</p>
                 </div>
-                <div><button class="btn btn-primary btn-ver">Ver detalles</button></div>
+                <div><button class="btn btn-primary btn-ver" data-target="#modal_contacto" data-toggle="modal"
+                        data-toggle2="tooltip" data-placement="top"
+                        title="Da clic Aqui para Pedidos!!!">Pedidos!</button></div>
             </div>
-            <div class="d-flex flex-column card-design justify-content-between">
-                <div>
-                    <h4>Panchos</h4>
-                    <p>Panchos: nachos con queso amarillo, frijoles y carne asada</p>
+            <div class="card card-design d-flex flex-column justify-content-between ml-3">
+                <img class="card-img-top" src="img/panchos.jpg" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Panchos</h5>
+                    <h6 class="card-subtitle text-muted">Con Todo</h6>
+                    <p class="card-text">Panchos: nachos con queso amarillo, frijoles y carne asada</p>
                 </div>
-                <div> <button class="btn btn-primary btn-ver">Ver detalles</button></div>
+                <div><button class="btn btn-primary btn-ver" data-target="#modal_contacto" data-toggle="modal"
+                        data-toggle2="tooltip" data-placement="top"
+                        title="Da clic Aqui para Pedidos!!!">Pedidos!</button></div>
             </div>
-            <div class="d-flex flex-column card-design justify-content-between">
-                <div>
-                    <h4>Más...</h4>
-                    <p>Ademas venta de tostadas de carne asada y mixtas</p>
+            <div class="card card-design d-flex flex-column justify-content-between ml-3">
+                <img class="card-img-top" src="img/otros.jpg" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Más...</h5>
+                    <h6 class="card-subtitle text-muted">Otro</h6>
+                    <p class="card-text">Ademas venta de tostadas de carne asada y mixtas</p>
                 </div>
-                <div> <button class="btn btn-primary btn-ver">Ver detalles</button></div>
+                <div><button class="btn btn-primary btn-ver" data-target="#modal_contacto" data-toggle="modal"
+                        data-toggle2="tooltip" data-placement="top"
+                        title="Da clic Aqui para Pedidos!!!">Pedidos!</button></div>
             </div>
-            <div class="d-flex flex-column card-design justify-content-between">
-                <div>
-                    <h4>Más...</h4>
-                    <p>Ademas venta de tostadas de carne asada y mixtas</p>
+            <div class="card card-design d-flex flex-column justify-content-between ml-3">
+                <img class="card-img-top" src="img/otros.jpg" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Más...</h5>
+                    <h6 class="card-subtitle text-muted">Otro</h6>
+                    <p class="card-text">Ademas venta de tostadas de carne asada y mixtas</p>
                 </div>
-                <div> <button class="btn btn-primary btn-ver">Ver detalles</button></div>
+                <div> <button class="btn btn-primary btn-ver" data-toggle="popover"
+                        data-content="Consulta nuestras Menu" title="Menu">Ver más...</button></div>
             </div>
-            <div class="d-flex flex-column card-design justify-content-between">
-                <div>
-                    <h4>Más 2...</h4>
-                    <p>Ademas venta de tostadas de carne asada y mixtas</p>
+            <div class="card card-design d-flex flex-column justify-content-between ml-3">
+                <img class="card-img-top" src="img/tostada.jpg" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Más 2...</h5>
+                    <h6 class="card-subtitle text-muted">Otro</h6>
+                    <p lass="card-text">Ademas venta de tostadas de carne asada y mixtas</p>
                 </div>
-                <div> <button class="btn btn-primary btn-ver">Ver detalles</button></div>
+                <div> <button class="btn btn-primary btn-ver" data-toggle="popover"
+                        data-content="Consulta nuestras Menu" title="Menu" data-placement="top">Ver más...</button>
+                </div>
             </div>
-            <div class="d-flex flex-column card-design justify-content-between">
-                <div>
-                    <h4>Más 3...</h4>
-                    <p>Ademas venta de tostadas de carne asada y mixtas</p>
+            <div class="card card-design d-flex flex-column justify-content-between ml-3">
+                <img class="card-img-top" src="img/burrito.jpg" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Burritos</h5>
+                    <h6 class="card-subtitle text-muted">Harina</h6>
+                    <p class="card-text">Burritos de carne asada y mixtas</p>
                 </div>
-                <div> <button class="btn btn-primary btn-ver">Ver detalles</button></div>
+                <div> <button class="btn btn-primary btn-ver" data-toggle="popover"
+                        data-content="Consulta nuestras Menu" title="Menu">Ver más...</button></div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal_contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">.:: Solicita tu Pedido ::.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="telefono">Telefono de contacto:</label>
+                        <input type="text" class="form-control" id="Telefono" placeholder="Ingrese su Telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="Pedido">Cual es tu Orden:</label>
+                        <textarea class="form-control" id="Pedido" placeholder="Ingrese su Pedido" rows="3"> </textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
             </div>
         </div>
     </div>
     <footer>
-        <div class="row">
+        <div class="row ">
             <div class="col-sm-4 d-flex flex-column" style="font-size:larger;">
-                <a href="http://www.facebook.com"><i class="fa fa-facebook"></i> Facebook</a><br />
-                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i> Instagram</a><br />
-                <a href="http://www.twtter.com"><i class="fa fa-twitter"></i> Twtter</a>
+                <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i>
+                    Facebook</a>
+                <a href="http://www.instagram.com" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram</a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    Twtter</a>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4">
                 <address>
-                    <h5><i class="fa fa-map-marker" aria-hidden="true"></i> Nuestra Ubicación</h5>
-                    <div>Calle Bilbao esquina con Bogota</div>
-                    <div>Col. Los Fresnos</div>
-                    <div>Nuevo Laredo, Tamaulipas, Mexico</div>
+                    <h5>Nuestra Ubicación</h5>
+                    <div><span class="oi oi-map-marker footer-address-icon"></span> Calle Bilbao esquina con Bogota
+                    </div>
+                    <div><span class="oi oi-map footer-address-icon"></span> Nuevo Laredo, Tamaulipas, Mexico</div>
+                    <div><span class="oi oi-phone footer-address-icon"></span> (867) 710-9090</div>
+
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end" style="font-size:larger;">
-                <a href="#">Contactanos</a><br />
-                <a href="#">Nosotros</a><br />
-                <a href="#">Menu</a><br />
-                <a href="#">Galeria</a>
+                <a href="./about.html">Nosotros</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./galeria.html">Galeria</a>
+                <a href="./contacto.html">Contacto</a>
             </div>
         </div>
+
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("[data-toggle2='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+            $('.carousel').carousel({
+                interval: 6000
+            });
+
+            $('#tacosBtn').on('show.bs.modal', function (e) {
+                console.log('el modal se está mostrando');
+                $('#tacosBtn').removeClass('btn-primary');
+                $('#tacosBtn').addClass('btn-success');
+                $('#tacosBtn').prop('disabled', true)
+            });
+
+            $('#tacosBtn').on('shown.bs.modal', function (e) {
+                console.log('el modal se mostró');
+            });
+
+            $('#tacosBtn').on('hide.bs.modal', function (e) {
+                console.log('el modal se oculta');
+            });
+
+            $('#tacosBtn').on('hidden.bs.modal', function (e) {
+                console.log('el modal se ocultó');
+                $('#tacosBtn').prop('disabled', false)
+            });
+        })
+    </script>
 </body>
-<script>
-    $('.carousel').carousel({
-        interval: 6000
-    })
-</script>
 
 </html>

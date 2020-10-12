@@ -1,42 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tacos Perry !!</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/principal.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>Taqueria, Tacos Perry!</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand" href="./index.html">Tacos Perry!</a>
+    <nav class="navbar  navbar-expand-md navbar-dark bg-naranja fixed-top">
+        <a class="navbar-brand" href="./index.html"> <img src="img/icon-taco-256.png" width="32" height="32"  alt="logo"/> Tacos Perry!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="./index.html" >Inicio <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="./nosotros.html" >Nosotros</a> </li>
-            <li class="nav-item"><a class="nav-link" href="./menu.html" >Menu</a> </li>
-            <li class="nav-item"><a class="nav-link" href="./Galeria.html" >Galeria</a> </li>
-            <li class="nav-item"><a class="nav-link" href="./contacto.html" >Contacto</a> </li>
+                <li class="nav-item "> <a class="nav-link" href="./index.html">Inicio <span
+                            class="sr-only">(current)</span></a></li>
+                <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./menu.html">Menu</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./galeria.html">Galeria</a></li>
+                <li class="nav-item active"> <a class="nav-link" href="#">Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron-seccion jumbotron-contacto">
-        <div class="container">
-            <h1>Taqueria, Tacos Perry!</h1>
-        </div>
+    <div class="jumbotron-seccion">
+            <h1><img src="img/icon-taco-256.png" width="64" height="64"  alt="logo"/> Taqueria, Tacos Perry!</h1>
     </div>
-
+    <!-- container -->
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="./index.html"> <span class="oi oi-home"></span>&nbsp; Inicio</a>
+                </li>
                 <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
         </nav>
@@ -86,29 +91,35 @@
                 <button type="submit" class="btn btn-primary ">Enviar</button>
             </div>
         </form>
-    </div>
+    </div> <!-- /container -->
     <footer>
         <div class="row">
-            <div class="col-sm-4 " style="font-size:larger;">
-                <a href="http://www.facebook.com">Facebook</a>
-                <a href="http://www.instagram.com">Instagram</a>
-                <a href="http://www.twtter.com">Twtter</a>
+            <div class="col-sm-4 d-flex flex-column" style="font-size:larger;">
+                <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i>
+                    Facebook</a>
+                <a href="http://www.instagram.com" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram</a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    Twtter</a>
             </div>
             <div class="col-sm-4">
                 <address>
                     <h5>Nuestra Ubicación</h5>
-                    <div>Calle Bilbao esquina con Bogota</div>
-                    <div>Col. Los Fresnos</div>
-                    <div>Nuevo Laredo, Tamaulipas, Mexico</div>
+                    <div><span class="oi oi-map-marker footer-address-icon"></span> Calle Bilbao esquina con Bogota
+                    </div>
+                    <div><span class="oi oi-map footer-address-icon"></span> Nuevo Laredo, Tamaulipas, Mexico</div>
+                    <div><span class="oi oi-phone footer-address-icon"></span> (867) 710-9090</div>
                 </address>
             </div>
-            <div class="col-sm-4   align-items-end" style="font-size:larger;">
-                <a href="#">Contactanos</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Menu</a>
-                <a href="#">Galeria</a>
+            <div class="col-sm-4 d-flex flex-column align-items-end" style="font-size:larger;">
+                <a href="./about.html">Nosotros</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./galeria.html">Galeria</a>
+                <a href="./contacto.html">Contacto</a>
             </div>
         </div>
+
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

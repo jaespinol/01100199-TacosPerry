@@ -1,0 +1,91 @@
+@yellow: #fffb05;
+@orange: #BD3207;
+
+@bgcolor: @orange ;
+
+.margenes(@top: 0px, @bottom:0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
+.bg-naranja {
+    background-color: @bgcolor;
+    /* color:rgb(255, 255, 255); */
+}
+
+.jumbotron {
+    background-image: url(../img/B03.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: top center;
+    color:white;
+    text-align: center;
+    padding-top: 150px;
+    text-shadow: 1px 2px rgb(160, 160, 160);
+
+}
+
+.jumbotron-seccion {
+    background-image: url(../img/B02.jpg);
+    height: 30vh;
+    background-size: cover;
+    background-position: top center;
+    margin-block-end: 20px;
+    color:rgb(0, 0, 0);
+    padding-top: 130px;
+    text-shadow: 2px 3px rgb(255, 255, 255);
+    text-align: center;
+}
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: @bgcolor;
+    color:rgb(255, 255, 255);
+    .margenes(100px,0px);
+}
+
+footer a{
+    color:rgb(255, 255, 255);
+}
+.card-design {
+    flex: 1 250px;
+    padding: 2px 0px 2px 0px; 
+    margin-top: 10px;
+    }
+    
+.btn-ver {
+    width: 100%;
+    border-radius: 0px;
+}
+.footer-address-icon {
+    padding-right: 10px;   
+}
+
+.banner{
+    padding-top: 56px;
+    margin-block-end: 20px;
+}
+
+.carousel-caption {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0px;
+    bottom: 0px;
+    margin-block-end: 20px;
+    text-shadow: 2px 3px rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+    .banner{
+        padding-top: 56px;
+        margin-block-end: 20px;
+    }
+    .carousel-caption {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-align: center;
+        
+        margin-block-end: 20px;
+        text-shadow: 2px 3px rgb(255, 255, 255);
+    }
+}
