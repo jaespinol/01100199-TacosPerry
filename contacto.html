@@ -17,7 +17,8 @@
 
 <body>
     <nav class="navbar  navbar-expand-md navbar-dark bg-naranja fixed-top">
-        <a class="navbar-brand" href="./index.html"> <img src="img/icon-taco-256.png" width="32" height="32"  alt="logo"/> Tacos Perry!</a>
+        <a class="navbar-brand" href="./index.html"> <img src="img/icon-taco-256.png" width="32" height="32"
+                alt="logo" /> Tacos Perry!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +35,7 @@
         </div>
     </nav>
     <div class="jumbotron-seccion">
-            <h1><img src="img/icon-taco-256.png" width="64" height="64"  alt="logo"/> Taqueria, Tacos Perry!</h1>
+        <h1><img src="img/icon-taco-256.png" width="64" height="64" alt="logo" /> Taqueria, Tacos Perry!</h1>
     </div>
     <!-- container -->
     <div class="container">
@@ -50,11 +51,11 @@
         <h5>Completa los siguientes datos</h5>
         <form>
             <div class="form-row">
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-6" id="divtxtNombre">
                     <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
                 </div>
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-6" id="divtxtapellido">
                     <label for="apellido">Apellido</label>
                     <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
                 </div>
@@ -88,7 +89,7 @@
                     <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-primary ">Enviar</button>
+                <button type="submit" onclick="Enviar(); return false;" class="btn btn-primary ">Enviar</button>
             </div>
         </form>
     </div> <!-- /container -->
@@ -126,6 +127,43 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/contacto.js"></script>
+    <script>
+        $(function () {
+            // console.log("Funcion Inicial");
+            txtNombre_blur();
+            txtApePat_blur();
+
+        });
+        function Enviar() {
+            var x = validar();
+            console.log(x);
+            if (x) {
+                txtNombre_blur();
+                txtApePat_blur();
+                console.log("Verdaro del If");
+                alert("Se enviaron los datos.");
+            }
+        };
+        function validar() {
+            var valido = true;
+            if ($("#nombre").val() == "") {
+                $("#nombre").focus();
+                valido = false;
+                console.log("Valida Nombre");
+            }
+
+            if ($("#apellido").val() == "") {
+                $("#apellido").focus();
+                valido = false;
+                console.log("Valida Apellido");
+
+            }
+            console.log("Validado: " + valido);
+            return valido;
+        };
+
+    </script>
 </body>
 
 </html>
